@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Skin-disease-detector</title>
+</head>
+<body>
+    <h1 class="text-center"> Skin Disease Detector</h1>
+    <form class="p-3 text-center" action='/', method="post" enctype="multipart/form-data">
+        <input class="form-control" type="file" name="imagefile">
+        <input class="btn btn-primary mt-3" type="submit" value="Predict Image"></intput>
+    </form>
+    {% if prediction %}
+        <p class="text-center">Prediction-{{prediction}}</p>
+    {% endif %}
+</body>
+</html>>
